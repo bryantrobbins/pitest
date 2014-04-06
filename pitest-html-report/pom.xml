@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<artifactId>pitest-parent</artifactId>
-		<groupId>org.pitest</groupId>
+		<groupId>edu.umd.cs.guitar</groupId>
 		<version>0.34-SNAPSHOT</version>
 	</parent>
 	<artifactId>pitest-html-report</artifactId>
