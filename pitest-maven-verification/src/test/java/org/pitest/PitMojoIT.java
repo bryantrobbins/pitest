@@ -48,16 +48,16 @@ public class PitMojoIT {
   public void shouldSetUserDirToArtefactWorkingDirectory() throws Exception {
     prepare("/pit-33-setUserDir");
     this.verifier.executeGoal("test");
-    this.verifier.executeGoal("org.pitest:pitest-maven:mutationCoverage");
+    this.verifier.executeGoal("edu.umd.cs.guitar:pitest-maven:mutationCoverage");
   }
 
   @Test
   public void shouldProduceConsistantCoverageData() throws Exception {
     final File testDir = prepare("/pit-deterministic-coverage");
     this.verifier.executeGoal("test");
-    this.verifier.executeGoal("org.pitest:pitest-maven:mutationCoverage");
+    this.verifier.executeGoal("edu.umd.cs.guitar:pitest-maven:mutationCoverage");
     final String firstRun = readCoverage(testDir);
-    this.verifier.executeGoal("org.pitest:pitest-maven:mutationCoverage");
+    this.verifier.executeGoal("edu.umd.cs.guitar:pitest-maven:mutationCoverage");
     final String secondRun = readCoverage(testDir);
     assertEquals(firstRun, secondRun);
   }
@@ -66,7 +66,7 @@ public class PitMojoIT {
   public void shouldWorkWithPowerMock() throws Exception {
     final File testDir = prepare("/pit-powermock");
     this.verifier.executeGoal("test");
-    this.verifier.executeGoal("org.pitest:pitest-maven:mutationCoverage");
+    this.verifier.executeGoal("edu.umd.cs.guitar:pitest-maven:mutationCoverage");
     final String actual = readResults(testDir);
     assertThat(
         actual,

@@ -6,7 +6,7 @@
 	    <artifactId>33-setUserDir</artifactId>
 	    <version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>org.pitest</groupId>
+	<groupId>edu.umd.cs.guitar</groupId>
 	<artifactId>33-setUserDir-subModule</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
@@ -29,7 +29,7 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.pitest</groupId>
+				<groupId>edu.umd.cs.guitar</groupId>
 				<artifactId>pitest-maven</artifactId>
 				<version>${pit.version}</version>
 			</plugin>

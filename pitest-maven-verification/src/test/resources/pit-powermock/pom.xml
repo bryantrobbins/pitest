@@ -49,7 +49,7 @@
             </configuration>
             </plugin>
 			<plugin>
-				<groupId>org.pitest</groupId>
+				<groupId>edu.umd.cs.guitar</groupId>
 				<artifactId>pitest-maven</artifactId>
 				<version>${pit.version}</version>
 				<configuration>
